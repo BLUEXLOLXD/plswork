@@ -12,9 +12,10 @@ local gyakusatsuSpawn = npcSpawns and npcSpawns:FindFirstChild("GyakusatsuSpawn"
 local destinationflbl = CFrame.new(-998.727, 64.7173, 339.988) * CFrame.Angles(0, math.rad(-90), 0)
 local destinationfrbr = CFrame.new(-998.727, 64.7173, 204.988) * CFrame.Angles(0, math.rad(-90), 0)
 local destinationmid = CFrame.new(-998.727, 64.7173, 270) * CFrame.Angles(0, math.rad(-90), 0)  
-local tweenSpeed = getgenv().weaponStage or "150"
+local tweenSpeed = 250
 
 if gyakusatsu then
+    print("Gyakusatsu is spawning")
     Openweapon()
     wait(0.5)
     autoSkill()
